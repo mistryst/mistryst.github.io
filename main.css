@@ -1,9 +1,9 @@
 h1 {
-	color: var(--text-color);
+	color: red;
 	font-size: 25px;
 }
 
 #slayed {
-	color: var(--text-color);
+	color: blue;
 	font-size: 20px;
 }
