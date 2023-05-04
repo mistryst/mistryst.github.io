@@ -1,9 +1,13 @@
+:root{
+	--text-color: beige;
+}
+
 h1 {
-	color: red;
+	color: var(--text-color);
 	font-size: 25px;
 }
 
 #slayed {
-	color: blue;
+	color: var(--text-color);
 	font-size: 20px;
 }
