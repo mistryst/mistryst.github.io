@@ -1,5 +1,23 @@
 html {
-	background-image: url('https://i.pinimg.com/564x/e6/35/55/e63555fb7d468ba3cebb61a1dde38193.jpg');
-	background-size: 100px auto;
-	background-repeat: repeat;
+  background-image: url('https://i.pinimg.com/564x/e6/35/55/e63555fb7d468ba3cebb61a1dde38193.jpg');
+  background-size: 100px auto;
+  background-repeat: repeat;
+}
+.container {
+  width: 600px;
+  height: 400px;
+  background: rgba(148,148,148,0.8);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family:'Courier New';
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 800px) {
+  .container{
+    width: 80%;
+    height: 80%;
+  }
 }
