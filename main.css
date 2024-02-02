@@ -6,7 +6,7 @@ html {
 .container {
   width: 600px;
   height: 400px;
-  background: rgba(148,148,148,0.8);
+  background: rgba(148,148,148,0.9);
   border-radius: 20px;
   position: absolute;
   top: 50%;
