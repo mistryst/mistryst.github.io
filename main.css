@@ -3,6 +3,7 @@ html {
   background-size: 100px auto;
   background-repeat: repeat;
 }
+
 .container {
   width: 600px;
   height: 400px;
@@ -14,6 +15,13 @@ html {
   font-family:'Courier New';
   transform: translate(-50%, -50%);
 }
+
+#discord {
+  position: absolute;
+  bottom: 6%;
+  left: 10%;
+}
+
 
 @media screen and (max-width: 800px) {
   .container{
