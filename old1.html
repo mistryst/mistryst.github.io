@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="https://i1.sndcdn.com/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg">
+  <title>mist's website</title>
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+          function ctrlShiftKey(e, keyCode) {
+    return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);}
+          document.onkeydown = (e) => {
+    // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U, view-source:
+      if (event.keyCode === 123 || ctrlShiftKey(e, 'I') ||
+      ctrlShiftKey(e, 'J') || ctrlShiftKey(e, 'C') ||
+        (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)))
+      return false;};
+  </script>
+  <style>
+    html {
+      -webkit-user-select: none;
+      /* Safari */
+      -ms-user-select: none;
+      /* IE 10 and IE 11 */
+      user-select: none;
+      /* Standard syntax */
+    }
+
+    ::-webkit-scrollbar {
+      width: 16px;
+      height: 16px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFElEQVQIW2M4fPz0////GYAYyAIASnoKpV3w4kgAAAAASUVORK5CYII=");
+      image-rendering: pixelated;
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+    ::-webkit-scrollbar-track:active {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAEElEQVQIW2No6+pjgAAgCwAWogM9VKrgGQAAAABJRU5ErkJggg==");
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-top: 1px solid #cccccc;
+      border-left: 1px solid #cccccc;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+      width: 16px;
+      height: 16px;
+      background-color: #cccccc;
+      z-index: 1;
+    }
+
+    ::-webkit-scrollbar-corner {
+      background-color: #cccccc;
+    }
+
+    ::-webkit-resizer {
+      width: 16px;
+      height: 16px;
+      background-color: #cccccc;
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAN0lEQVR4Ae3MgQUAMBRDwU5fFF05lb/CARTBw2Ulof0DxPtcwp3hNuEYnjbcEW4TjuFpwx3h9gMWGgZ2Y/PT2gAAAABJRU5ErkJggg==");
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      image-rendering: pixelated;
+    }
+
+    ::-webkit-scrollbar-button,
+    ::-webkit-scrollbar-button {
+      border-top: 1px solid #cccccc;
+      border-left: 1px solid #cccccc;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-color: #cccccc;
+      image-rendering: pixelated;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    ::-webkit-scrollbar-button:active,
+    .scroll::-webkit-scrollbar-button:active {
+      background-position: 2px 2px;
+    }
+
+    ::-webkit-scrollbar-button:horizontal:decrement,
+    .scroll::-webkit-scrollbar-button:horizontal:decrement {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHklEQVQY02NgoBT8xyX8H5fwf1zCpOjAYwceV1EEAAO2D/HsQ4vsAAAAAElFTkSuQmCC");
+    }
+
+    ::-webkit-scrollbar-button:horizontal:increment,
+    ::-webkit-scrollbar-button:horizontal:increment {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHUlEQVQY02NgIB/8xy3xH7fEf9wS/0nUQZqrKAYAK44P8ZRmzLQAAAAASUVORK5CYII=");
+    }
+
+    ::-webkit-scrollbar-button:vertical:decrement,
+    ::-webkit-scrollbar-button:vertical:decrement {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGklEQVR4AWMYxuA/SYphmETFhDX9x4mHGQAAcL4P8dQiMq8AAAAASUVORK5CYII=");
+    }
+
+    ::-webkit-scrollbar-button:vertical:increment,
+    ::-webkit-scrollbar-button:vertical:increment {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAF0lEQVQY02NgoBf4jwJxSOHQhcNAOgMAWWAP8Rv2U3UAAAAASUVORK5CYII=");
+    }
+
+    ::-webkit-scrollbar-button:horizontal:increment:start,
+    .scroll::-webkit-scrollbar-button:horizontal:increment:start {
+      display: none;
+    }
+
+    ::-webkit-scrollbar-button:horizontal:decrement:end,
+    .scroll::-webkit-scrollbar-button:horizontal:decrement:end {
+      display: none;
+    }
+
+    ::-webkit-scrollbar-button:vertical:increment:start,
+    ::-webkit-scrollbar-button:vertical:increment:start {
+      display: none;
+    }
+
+    ::-webkit-scrollbar-button:vertical:decrement:end,
+    ::-webkit-scrollbar-button:vertical:decrement:end {
+      display: none;
+    }
+
+    ::-webkit-scrollbar-button:active,
+    ::-webkit-scrollbar-button:active {
+      border-top: 1px solid #868a8e;
+      border-left: 1px solid #868a8e;
+      border-bottom: 1px solid #868a8e;
+      border-right: 1px solid #868a8e;
+      box-shadow: none;
+    }
+
+    a:link {
+      text-decoration: underline;
+      color: black;
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      font-style: italic;
+      color: black;
+      font-weight: bold;
+      text-shadow: -1px -1px 0 #00C09D, 1px -1px 0 #00C09D, -1px 1px 0 #00C09D, 1px 1px 0 #00C09D;
+    }
+
+    a:active {
+      text-decoration: none;
+      color: black;
+    }
+
+    body {
+      font-family: ms ui gothic;
+      font-size: 16px;
+      color: #5D5D5D;
+      background-color: teal;
+      background-image: url("assets/bg.png");
+      background-repeat: repeat;
+      background-size: 100px 100px;
+      padding: 10px;
+      overflow: auto;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 0.9fr 0.9fr 1fr 1fr;
+      grid-template-rows: 0.3fr 1fr 1fr 1fr 1.7fr 0.3fr;
+      gap: 10px 10px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        ". top top top ."
+        ". side content content ."
+        ". side content content ."
+        ". side content content ."
+        ". side content content ."
+        ". footer footer footer .";
+      margin: auto;
+      margin-top: 70px;
+      padding: 10px;
+      width: 1000px;
+      height: 655px;
+      position: relative;
+    }
+
+    .top {
+      grid-area: top;
+      border: 2px groove #b2c8df;
+      border-radius: 10px 10px 5px 5px;
+      background-color: #DEDEDE;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .footer {
+      grid-area: footer;
+      border: 2px groove #b2c8df;
+      border-radius: 5px 5px 10px 10px;
+      background-color: #DEDEDE;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      text-shadow: -1px -1px 0 #C0DBEA, 1px -1px 0 #C0DBEA, -1px 1px 0 #C0DBEA, 1px 1px 0 #C0DBEA;
+    }
+
+    .side {
+      grid-area: side;
+      border: 2px groove #b2c8df;
+      border-radius: 5px 10px 5px 10px;
+      background-color: #DEDEDE;
+      padding: 10px;
+    }
+
+
+    .content {
+      grid-area: content;
+      display: grid;
+      grid-template-columns: 0.1fr 2.6fr 0.1fr;
+      grid-template-rows: 0.1fr 2.8fr 0.1fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        ". . ."
+        ". center ."
+        ". . .";
+      border: 2px groove #b2c8df;
+      border-radius: 5px 10px 10px 5px;
+      background-color: #DEDEDE;
+      background-image: url("");
+      padding: 10px;
+    }
+
+    .center {
+      grid-area: center;
+      border: 2px groove #b2c8df;
+      border-radius: 5px 10px 10px 5px;
+      background-color: #DEDEDE;
+      padding: 5px;
+    }
+
+    #hahafunny {
+      position: absolute;
+      right: 200px;
+      bottom: -30px;
+      z-index: 1;
+      transform: rotate(20deg);
+      animation: ;
+    }
+
+    #app {
+      z-index: 2
+    }
+
+    #sticker {
+      position: absolute;
+      left: 190px;
+      top: -20px;
+      z-index: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="top">
+      <font color="#AFC8AD"
+        style="font-weight:bold;text-shadow: -1px 0 #629566, 0 1px #629566, 1px 0 #629566, 0 -1px #629566;"><span>funny
+          website</span></font>
+    </div>
+
+    <div class="footer">
+      <font style="font-weight:bold;text-shadow: -1px 0 #629566, 0 1px #629566, 1px 0 #629566, 0 -1px #629566;"> ⋆｡‧˚ʚ ☼ ɞ˚‧｡⋆</font>
+    </div>
+
+    <div class="side">
+      <center><a href="https://open.spotify.com/album/2Cn1d2KgbkAqbZCJ1RzdkA?si=DxjzmJ6UR5ieubP-O9Ghjw"><img src="https://i.kym-cdn.com/entries/icons/original/000/041/742/cover3.jpg" width="155px"></a></center>
+      <font color="#006400">HALLO!!1</font> enjoy the little silly information you see about me in this website 😘😘
+      <br><br>
+      <b><u>navigate buttonsss</u></b>:
+      <br>
+      <a href="assets/intro.html" target="frame">home</a>, <a href="assets/about.html" target="frame">about</a>, <a
+        href="assets/links.html" target="frame">links</a>, <a href="assets/changelog.html" target="frame">changelog n more</a>
+      <br><br>
+      <center><a href="https://open.spotify.com/album/3I2KkX13lHXuYqfBjSOopo?si=RHWUzMa2SiyptzR2cnoGCg"><img
+          src="https://64.media.tumblr.com/09472219fe0c7eba7f1b1e9c4b41d3a0/2b09d41b19fa47c2-a1/s640x960/2e0d3da0502d3926e3a7765de49aeb324e42342b.jpg"
+          width="155px"></a></center>
+      <br><br>
+      <center>work in progress website</center>
+    </div>
+
+    <div class="content">
+
+      <div class="center">
+        <iframe id="frame" src="assets/intro.html" name="frame" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
+
+      <div id="hahafunny"><a href="assets/cat.html"><img src="https://cdn3.emoji.gg/emojis/5656-shining-smile.png" width="80px"></a></div>
+
+      <div id="sticker"><a href="assets/emuotori.html"><img src="https://static.wikia.nocookie.net/ec2de13b-bad5-45e6-80b7-bfc921ec9a4f/scale-to-width/755" width="100px"></a>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
