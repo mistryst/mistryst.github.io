@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        html {
+            background-color: teal;
+            background-image: url(/assets/media/bg.png);
+            background-repeat: repeat;
+            background-size: 100px 100px;
+        }
+        #title {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            width: auto inherit;
+            height: 25px;
+            background-color: rgb(0,0,123);
+            align-items: center;
+            cursor: grab;
+            padding-left: 4px;
+        }
+        
+        #container {
+            min-width: 340px;
+            min-height: 560px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(191,191,191);
+            padding: 1px;
+            border: outset 3px;
+            animation: growBox 1s forwards; /* Apply the animation */
+        }
+
+        #btn {
+            width: 10px;
+            height: 10px;
+            background-color: rgb(191,191,191);
+            border-style: outset;
+            color: black;
+            margin: 0px 5px 0px 0px;
+            align-content: center;
+            font-size: 10px;
+            text-align: center;
+        }
+
+        #home {
+            align-items: center;
+            align-content: center;
+            text-align: center;
+        }
+
+        #about {
+            text-align: center;
+        }
+
+        #links {
+            text-align: center;
+        }
+
+    </style>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>mist' website</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="title">
+                <p>mist' website!1</p>
+                <div id="btn">⨯</div>
+            </div>
+            <div id="content">
+                <div id="home">
+                    <br><br>
+                    <img src="/assets/media/m1.jpg" width="200px" height="auto" style="mask-image: url('/assets/media/mask.png'); mask-size: 200px; mask-repeat: no-repeat;">
+                    <br>
+
+                </div>
+                <div id="about">
+                    <img src="/assets/media/mdivider.gifv" width="250px" height="auto">
+                    <br><br>
+                    <p>mist &nbsp <img src="/assets/media/mcat1.gif"> &nbsp &nbsp &nbsp &nbsp &nbsp any prns &nbsp<img src="/assets/media/mcat3.gif"></p>
+                    <p>i do things,,, <img src="/assets/media/mcat2.gif"> &nbsp &nbsp bi and aromantic <img src="/assets/media/mcat4.gif"></p>
+                    <p></p>
+                </div>
+                <div id="links">
+                    <a>more</a> &nbsp &nbsp &nbsp &nbsp <a>links</a> &nbsp &nbsp &nbsp &nbsp <a>winamp</a>
+                    <br><br>
+                    <a href="/index.html">go to pc version</a>
+                    <br><br>
+                    <img src="/assets/media/stamp4.png"> &nbsp <img src="/assets/media/stamp5.png"> &nbsp <img src="/assets/media/stamp6.png">
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+
+    </script>
+</html>
