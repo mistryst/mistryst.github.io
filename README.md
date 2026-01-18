@@ -1,2 +1,2 @@
-big project
-will be constantly updating
+not too big project
+funny shits will be updated a lot
