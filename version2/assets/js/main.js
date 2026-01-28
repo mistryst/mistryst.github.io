@@ -379,11 +379,11 @@ async function winamp() {
                                 artist: "Miracle Musical",
                                 title: "Candle on the Water",
                         },
-                        url: "/assets/media/song2.mp3",
+                        url: "assets/media/song2.mp3",
                         }],
 
                 initialSkin: {
-                        url: "/assets/winampskin.wsz"
+                        url: "assets/winampskin.wsz"
                 },
                         
                 });
@@ -394,14 +394,14 @@ async function winamp() {
 function virusApp() {
         const imgRan = document.getElementById('payload');
         const number = Math.floor(Math.random() * 15) + 1;
-        const imgsrc = `/assets/media/v${number}.jpg`;
+        const imgsrc = `assets/media/v${number}.jpg`;
         imgRan.src = imgsrc;
 }
 
 // load apps' content
 const contentArea = document.querySelectorAll('.content');
 const loadContent = async (icoID) => {
-        const contentLocate =  `/assets/sub-html/${icoID}.html`
+        const contentLocate =  `assets/sub-html/${icoID}.html`
         const response = await fetch(contentLocate)
         const contentLoad = await response.text()
 
